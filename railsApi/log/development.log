@@ -388,3 +388,53 @@ Processing by Api::BoxesController#index as */*
 Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2019-06-20 23:23:36 -0400
+Started GET "/" for ::1 at 2019-06-20 23:23:36 -0400
+  [1m[35m (31.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/api/boxes" for ::1 at 2019-06-21 09:36:29 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (37.4ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 328ms (Views: 156.8ms | ActiveRecord: 38.6ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 09:40:07 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.9ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 12ms (Views: 4.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 09:42:22 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 09:42:37 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 09:47:42 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 09:48:54 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
