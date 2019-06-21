@@ -9,7 +9,6 @@ export const fetchBoxes = ()=> dispatch =>{
                 type: FETCH_BOXES,
                 payload: boxData
             }))
-   
 }
 
 export const newBox = (input) => dispatch => {

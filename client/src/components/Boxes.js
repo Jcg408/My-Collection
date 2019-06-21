@@ -3,17 +3,16 @@ import {connect} from 'react-redux';
 import {fetchBoxes} from '../actions/boxActions';
 
  class Boxes extends Component {
-
-
+     componentDidMount() {
+         this.props.fetchBoxes();
+     }
 
     render() {
-        const boxItems = this.state.boxes.map(box => 
+        const boxItems = this.props.boxes.map(box => 
             (<div key={box.id}>
                 <h3>{box.name}</h3>
                 <p>{box.description}</p>
-               
             </div>
-
             ))
         
         return (
@@ -23,4 +22,8 @@ import {fetchBoxes} from '../actions/boxActions';
         )
     }
 }
-export default connect(null, {fetchBoxes}) (Boxes);
+const mapStateToProps = state => ({
+    boxes: state.boxes.items
+})
+
+export default connect(mapStateToProps, {fetchBoxes}) (Boxes);

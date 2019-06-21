@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import{connect} from 'react-redux';
+import {newBox} from '../actions/boxActions';
 
  class BoxForm extends Component {
     constructor (props) {
@@ -25,15 +27,9 @@ import React, { Component } from 'react'
             year: this.state.year,
             imgUrl: this.state.imgUrl
         }
-        fetch('http://localhost:3001/api/boxes', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(box)
-        })
-            .then(res => res.json())
-            .then(data =>console.log(data))
+
+        //callaction
+        
     }
     render() {
         return (
