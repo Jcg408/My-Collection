@@ -10,8 +10,9 @@ import {fetchBoxes} from '../actions/boxActions';
     render() {
         const boxItems = this.props.boxes.map(box => 
             (<div key={box.id}>
-                <h3>{box.name}</h3>
-                <p>{box.description}</p>
+                <BoxList boxlist = {box.name} />
+                {/* <h3>{box.name}</h3>
+                <p>{box.description}</p> */}
             </div>
             ))
         
