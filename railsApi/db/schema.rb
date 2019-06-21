@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2019_06_20_193010) do
   create_table "boxes", force: :cascade do |t|
     t.string "name"
     t.text "description"
+    t.string "size"
     t.string "year"
     t.string "imgUrl"
     t.datetime "created_at", null: false

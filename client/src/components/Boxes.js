@@ -10,8 +10,9 @@ import {fetchBoxes} from '../actions/boxActions';
     render() {
         const boxItems = this.props.boxes.map(box => 
             (<div key={box.id}>
-                <h3>{box.name}</h3>
-                <p>{box.description}</p>
+             <img src={box.imgUrl} alt={box.name}/>
+             <h2>{box.name}</h2>
+             <p>{box.description} - {box.year}</p>
             </div>
             ))
         
@@ -25,5 +26,7 @@ import {fetchBoxes} from '../actions/boxActions';
 const mapStateToProps = state => ({
     boxes: state.boxes.items
 })
+
+
 
 export default connect(mapStateToProps, {fetchBoxes}) (Boxes);

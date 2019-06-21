@@ -6,8 +6,9 @@ const Navbar = () => {
     return(
         <div className="Navigation">
         <ul>
-            <li><NavLink to="/boxes">Russian Lacquer Boxes</NavLink></li>
-            <li><NavLink to="/box/new">Add / Delete Box</NavLink></li>
+            <li><NavLink to="/"> Home</NavLink></li>
+            <li><NavLink to="/boxes"> Inventory</NavLink></li>
+            <li><NavLink to="/box/new">Add New Item</NavLink></li>
             <li><NavLink to="/info">Information / Resources</NavLink></li>
         </ul>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Main from './components/Main';
+import Main from './components/Home';
 import Info from './components/Info';
 import Boxes from './components/Boxes';
 import BoxForm from './components/BoxForm';
