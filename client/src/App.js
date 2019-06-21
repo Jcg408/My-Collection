@@ -11,7 +11,7 @@ function App() {
   return (
     <Provider store = {store}>
        <div className="App">
-        <BoxForm/>
+        
         <hr/>
         <Boxes/>
       </div>

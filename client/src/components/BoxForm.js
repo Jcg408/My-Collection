@@ -28,7 +28,7 @@ import {newBox} from '../actions/boxActions';
             imgUrl: this.state.imgUrl
         }
 
-        //callaction
+        this.props.newBox(box);
         
     }
     render() {
@@ -58,4 +58,4 @@ import {newBox} from '../actions/boxActions';
         )
     }
 }
-export default BoxForm;
+export default connect(null, {newBox}) (BoxForm);
