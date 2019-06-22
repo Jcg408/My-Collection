@@ -10,7 +10,7 @@ import {fetchBoxes} from '../actions/boxActions';
     render() {
         const boxItems = this.props.boxes.map(box => 
             (<div key={box.id}>
-             <img src={box.imgUrl} alt={box.name}/>
+             <img src= {box.imgUrl} alt={box.name}/>
              <h2>{box.name}</h2>
              <p>{box.description} - {box.year}</p>
             </div>

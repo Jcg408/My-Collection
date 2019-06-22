@@ -869,3 +869,104 @@ Processing by Api::BoxesController#index as */*
 Completed 200 OK in 34ms (Views: 18.3ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/api/boxes" for ::1 at 2019-06-21 20:08:43 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.0ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 20:09:02 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 20:09:36 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 20:09:44 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 20:11:15 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-21 20:41:19 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.0ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (21.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+Migrating to CreateBoxes (20190620193010)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "boxes"[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190620193010"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+Migrating to CreateBoxes (20190620193010)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190620193010_create_boxes.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "boxes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "size" varchar, "year" varchar, "imgUrl" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190620193010_create_boxes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190620193010"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (37.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.6ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "At the Well"], ["description", "Palekh - Traditional Russian village scene of women retrieving water in a winter landscape."], ["size", "3x3x1.5 inches"], ["year", "1985"], ["imgUrl", "/images/atthewell.jpg"], ["created_at", "2019-06-22 00:44:52.832847"], ["updated_at", "2019-06-22 00:44:52.832847"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Load (1.8ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBox Load (0.4ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" ORDER BY "boxes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/api/boxes" for ::1 at 2019-06-21 20:46:21 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (12.9ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 93ms (Views: 56.2ms | ActiveRecord: 13.9ms)
+
+
