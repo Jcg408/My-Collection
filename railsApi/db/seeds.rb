@@ -2,28 +2,28 @@ boxes = Box.create([
     {
         name: 'At the Well',
         description: 'Palekh - Traditional Russian village scene of women retrieving water in a winter landscape. 
-        Black lacquer exterior with gold filigree and red lacquer interior.'
+        Black lacquer exterior with gold filigree and red lacquer interior.',
         size: '3 x 3 x 1.5 inches',
         year: '1985',
         imgUrl: '/images/atthewell.jpg'
-    }
+    },
 
     {
         name: 'Baba Yaga',
         description: 'Kholui - Russian folk tale, the witch Baba Yaga lives in a chicken footed hut and travels in a magical pestle. 
-        Black lacquer exterior with gold filigree, red lacquer interior, hinged top.'
+        Black lacquer exterior with gold filigree, red lacquer interior, hinged top.',
         size: '7 x 5 x 1.5 inches',
         year: '2009',
         imgUrl: '/images/babayaga.jpg'
-    }
+    },
 
     {
         name: 'Emelya',
-        description: 'Fedoskino - Russian folk Tale of Emelya and the Magic Pike. Black lacquer exterior, red lacquer interior, hinged top ',
+        description: 'Fedoskino - Russian folk Tale of Emelya and the Magic Pike. Black lacquer exterior, red lacquer interior, hinged top .',
         size: '5.5 x 4.13 x 1.5 inches',
         year: '1992',
         imgUrl: '/images/emelya.jpg'
-    }
+    },
 
     {
         name: 'Golden Cockerel',
@@ -32,7 +32,7 @@ boxes = Box.create([
         size: '9.25 x 7 x 1.63 inches',
         year: '1985',
         imgUrl: '/images/goldencockerel.jpg'
-    }
+    },
 
     {
         name: 'Snegurochka',
@@ -40,7 +40,7 @@ boxes = Box.create([
         size: '3x3x1.5 inches',
         year: '1995',
         imgUrl: '/images/snowmaiden.jpg'
-    }
+    },
 
     {
         name: 'Winter in Countryside',
@@ -48,7 +48,7 @@ boxes = Box.create([
         size: '10 x 8 x 3 inches',
         year: '1978',
         imgUrl: '/images/winter.jpg'
-    }
+    },
 
     
     {
@@ -57,7 +57,7 @@ boxes = Box.create([
         size: '13 x 8 x 3 inches',
         year: '2001',
         imgUrl: '/images/ruslan.jpg'
-    }
+    },
 
 
     {
@@ -69,10 +69,5 @@ boxes = Box.create([
     }
 
     
-
-
-
-
-
 ])
 
