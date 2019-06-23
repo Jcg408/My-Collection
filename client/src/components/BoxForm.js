@@ -21,22 +21,24 @@ import {newBox} from '../actions/boxActions';
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const box = {
+        this.props.newBox(this.state);
+        this.setState({
             name: this.state.name,
             description: this.state.description,
             year: this.state.year,
             imgUrl: this.state.imgUrl
-        }
-
-        this.props.newBox(box);
+        })
+        
         
     }
+
+   
     render() {
         return (
             <div>
                 <h1>Add Item to Collection</h1>
 
-                <form onSubmit={this.handleSubmit} className="contact">
+                <form onSubmit={this.handleSubmit} className="box">
                    <div>
                        <label>Name:</label>
                        <input type="text" onChange={this.handleChange} name ="name" value={this.state.name}/>

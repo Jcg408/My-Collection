@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Main from './components/Home';
+import Home from './components/Home';
 import Info from './components/Info';
+
 import Boxes from './components/Boxes';
 import BoxForm from './components/BoxForm';
 import Navbar from './components/Navbar';
@@ -13,7 +14,7 @@ function App() {
           <Navbar/>
 
           <Switch>
-            <Route exact path='/' component={Main} />
+            <Route exact path='/' component={Home} />
             <Route exact path='/boxes' component={Boxes} />
             <Route exact path='/box/new' component={BoxForm} />
             <Route exact path='/info' component={Info} />

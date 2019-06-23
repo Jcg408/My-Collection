@@ -1,6 +1,6 @@
 import React from 'react'
 
- const Info = () => {
+ const Home = () => {
     return (
         <div>
             <h1> Russian Lacquer Art</h1>
@@ -13,7 +13,7 @@ import React from 'react'
         </div>
     )
 }
-export default Info;
+export default Home;
 
 
 

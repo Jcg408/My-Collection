@@ -1,4 +1,4 @@
-import {FETCH_BOXES, NEW_BOX} from './types';
+import {FETCH_BOXES, NEW_BOX, REMOVE_BOX} from './types';
 
 const apiUrl = 'http://localhost:3001/api/boxes'
 
@@ -8,7 +8,9 @@ export const fetchBoxes = ()=> dispatch =>{
             .then(boxData => dispatch({
                 type: FETCH_BOXES,
                 payload: boxData
-            }))
+            })
+        )
+            .catch(err=> err)
 }
 
 export const newBox = (input) => dispatch => {
@@ -20,11 +22,25 @@ export const newBox = (input) => dispatch => {
             body: JSON.stringify(input)
         })
             .then(res => res.json())
-            .then(boxData =>dispatch ({
+            .then(boxData => dispatch ({
                 type: NEW_BOX,
                 payload: boxData
             }))
-
+            .catch(err => err)
 }
 
 
+export const removeBox = () => dispatch => {
+    fetch(apiUrl, {
+        method: 'DELETE',
+        headers: {
+        'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(data => dispatch ({
+        type: REMOVE_BOX,
+        payload:data
+
+    }))
+}
