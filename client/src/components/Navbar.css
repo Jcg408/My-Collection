@@ -1,0 +1,16 @@
+a {
+    color: rgb(242, 247, 241);
+    text-decoration: none;
+}
+
+button{
+ background-color: rgb(243, 85, 22);
+ border-style: solid;
+ border-color: rgb(235, 141, 79);
+ border-radius: 5px;
+ padding: 5px;
+ margin: 2px;
+ font-family: Elephant, san-serif;
+ font-size: 1em;
+
+}

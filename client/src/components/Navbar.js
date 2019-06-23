@@ -1,18 +1,17 @@
 import React from 'react';
+import './Navbar.css';
 import {NavLink} from 'react-router-dom';
 
 
 const Navbar = () => {
     return(
-        
-            <nav className = 'navbar'>
+    <nav className='navbar'>
                 <ul>
-                    <li><NavLink to="/"> Home</NavLink></li>
-                    <li><NavLink to="/boxes"> Inventory</NavLink></li>
-                    <li><NavLink to="/box/new">Add New Item</NavLink></li>
-                    <li><NavLink to="/info">Information / Resources</NavLink></li>
+                    <button><NavLink to="/"> Home</NavLink></button>
+                    <button><NavLink to="/boxes"> Inventory</NavLink> </button>
+                    <button><NavLink to="/box/new">Add New Item</NavLink> </button>
+                    <button><NavLink to="/info">Information / Resources</NavLink> </button>
                 </ul>
-           
             </nav>
                
         

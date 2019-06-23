@@ -42,6 +42,6 @@ class Api::BoxesController < ApplicationController
     end
 
     def box_params
-        params.require(:box).permit(:name, :description, :year, :imgUrl )
+        params.require(:box).permit(:name, :description, :year, :size, :imgUrl )
     end
 end

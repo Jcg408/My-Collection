@@ -13,9 +13,6 @@ import {Link} from 'react-router-dom';
          this.props.removeBox();
        
      }
-
-    
-    
     render() {
         const boxItems = this.props.boxes.map(box => 
             (<div key={box.id} className="container">

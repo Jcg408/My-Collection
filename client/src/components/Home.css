@@ -4,8 +4,6 @@ body {
 }
 
 .container {
-    /* background-color: white;
-    opacity: 0.5; */
     font-family: Elephant, sans serif;
     font-weight: 400;
     margin: 150px auto;
@@ -14,4 +12,24 @@ body {
 }
 h1 {
     font-size: 3.4em;
+}
+
+form {
+    
+    margin: 50px auto;
+ 
+}
+label {
+    font-size: 1.25em;
+    margin: 5px auto;
+    
+}
+input{
+    font-size: 1.3em;
+    margin: 5px auto;
+    opacity: 0.6;
+}
+
+button.addbox {
+    color: white;
 }
