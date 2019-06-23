@@ -2,7 +2,7 @@ import React from 'react'
 
  const Home = () => {
     return (
-        <div>
+        <div >
             <h1> Russian Lacquer Art</h1>
             <p>Russian lacquer art developed from the art of icon painting, which came to an end with the collapse of 
                 Imperial Russia. The icon painters, who previously had been employed by supplying not only churches but 
