@@ -1,4 +1,4 @@
-import {FETCH_BOXES, NEW_BOX} from '../actions/types';
+import {FETCH_BOXES, NEW_BOX,  REMOVE_BOX} from '../actions/types';
 
 const initialState = {
     items: [],
@@ -7,7 +7,6 @@ const initialState = {
 export default function (state = initialState, action) {
     switch (action.type) {
        case FETCH_BOXES:
-           
            return {
                ...state,
                items: action.payload
@@ -16,7 +15,14 @@ export default function (state = initialState, action) {
         case NEW_BOX:
            return {
                ...state,
-               iItem: action.payload
+               item: action.payload
+           }
+
+        case REMOVE_BOX: 
+           return {
+               ...state,
+               items: state.items.filter(item => item.id !== action.payload)
+
            }
         default:
             return state;
