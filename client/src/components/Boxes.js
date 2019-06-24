@@ -11,8 +11,9 @@ import './Home.css'
          this.props.fetchBoxes();
      }
 
-     handleDelete =(e) => {
-         this.props.removeBox();
+     handleDelete =(boxid) => {
+       
+         this.props.removeBox(boxid);
         
        
      }
@@ -25,7 +26,7 @@ import './Home.css'
                     <p>{box.description} {box.size} - {box.year}</p>
                     <br/>
                  </div>
-                 <button onClick={(e) => this.handleDelete(this.props.id)} >Delete</button>
+                 <button onClick={() => this.handleDelete(box.id)} >Delete</button>
             </div>
             
             ))

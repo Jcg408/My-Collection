@@ -33,8 +33,8 @@ export const newBox = (input) => dispatch => {
 }
 
 
-export const removeBox = () => dispatch => {
-    fetch(apiUrl,  {
+export const removeBox = (boxid) => dispatch => {
+    fetch(`${apiUrl}/${boxid}`, {
         method: 'DELETE',
         headers: {
         'Content-Type': 'application/json'
@@ -42,6 +42,7 @@ export const removeBox = () => dispatch => {
     })
     .then(res => res.json())
     .then(data => dispatch ({
-        type: REMOVE_BOX
+        type: REMOVE_BOX,
+        payload: boxid
     }))
 }

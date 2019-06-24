@@ -25,11 +25,11 @@ import '../components/Home.css';
         this.props.newBox(this.state);
         event.preventDefault();
         this.setState({
-            name: this.state.name,
-            description: this.state.description,
-            year: this.state.year,
-            size: this.state.size,
-            imgUrl: this.state.imgUrl
+            name: "",
+            description: "",
+            year: "",
+            size: "",
+            imgUrl: ""
         })
         
     }

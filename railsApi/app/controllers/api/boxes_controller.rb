@@ -12,22 +12,20 @@ class Api::BoxesController < ApplicationController
         else
             render :json => {message: box.errors}, status: 400
         end
-
     end
 
     def destroy
-      
-        if box.delete
-            render :json => {message: "box has been deleted"}, status: 204
+        if @box.delete
+            render :json => {message: "box has been deleted"}
         else
-            render :json => {message: "box Not Deleted"}, status: 400
+            render :json => {message: "box Not Deleted"}
         end
     end
 
     private
 
     def set_box
-        box = Box.find_by(id: params[:id])
+        @box = Box.find_by(id: params[:id])
     end
 
     def box_params
