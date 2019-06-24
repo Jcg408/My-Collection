@@ -1,7 +1,6 @@
 import {FETCH_BOXES, NEW_BOX, REMOVE_BOX} from './types';
 
 
-
 const apiUrl = 'http://localhost:3001/api/boxes'
 
 export const fetchBoxes = ()=> dispatch =>{

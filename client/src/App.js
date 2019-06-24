@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Main from './components/Home';
 import Info from './components/Info';
-import Boxes from './components/Boxes';
+import Boxes from './containers/Boxes';
 import BoxForm from './containers/BoxForm';
 import Navbar from './components/Navbar';
 import {Switch, Route} from 'react-router-dom';

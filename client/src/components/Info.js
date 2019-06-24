@@ -24,10 +24,7 @@ import './Home.css'
             <h3>Sunbirds.com -</h3>
             <p>https://www.sunbirds.com</p>
               
-              
-              {/* 
-
-                */}
+             
         </div>
     )
 }

@@ -7,18 +7,13 @@ import './Home.css';
         <div className = "container">
             <h1>My Collection </h1>
             <br/>
-
             <h2>Russian Lacquer Art</h2>
-            
-       
-              
 
-        <footer>
-            J. Gladstone
-            6/2019
-            Flatiron Project
-        </footer>
-            
+            <footer>
+                J. Gladstone
+                6/2019
+                Flatiron Project
+            </footer>
         </div>
     )
 }

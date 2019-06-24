@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {fetchBoxes} from '../actions/boxActions';
 import {removeBox} from '../actions/boxActions';
-// import {NavLink} from 'react-router-dom';
-import './Home.css'
-
+import '../components/Home.css'
 
  class Boxes extends Component {
      componentDidMount() {
@@ -12,9 +10,7 @@ import './Home.css'
      }
 
      handleDelete =(boxid) => {
-       
          this.props.removeBox(boxid);
-        
        
      }
     render() {
@@ -34,8 +30,6 @@ import './Home.css'
         return (
             <div className = "boxitems">
                 {boxItems}
-                
-
             </div>
         )
     }
