@@ -22,8 +22,8 @@ import './Home.css';
     }
 
     handleSubmit = (event) => {
-        event.preventDefault();
         this.props.newBox(this.state);
+        event.preventDefault();
         this.setState({
             name: this.state.name,
             description: this.state.description,
@@ -59,7 +59,7 @@ import './Home.css';
                        <label>Image: </label>
                        <input type="text" onChange={this.handleChange} name="imgUrl" value={this.state.imgUrl}/>
                        <br/>
-                       <button className="addbox" type="submit">Submit</button>
+                       <button className="addbox" type="submit" value="submit">Submit</button>
                    </div>
                 </form>
                 
