@@ -11,24 +11,25 @@ import './Home.css'
          this.props.fetchBoxes();
      }
 
-     handleDelete =() => {
+     handleDelete =(e) => {
+         
          this.props.removeBox();
+        
        
      }
     render() {
         const boxItems = this.props.boxes.map(box => 
             (<div key={box.id} className="jumbotron">
              <img src= {box.imgUrl} alt={box.name}/>
-             <React.Fragment>
-                 <div class="desc">
+                
+                 <div className="desc">
                 <h2>{box.name}</h2>
                 <p>{box.description} {box.size} - {box.year}</p>
                 <br/>
-                 </div>
                 
-             </React.Fragment>
-            
-             <button><NavLink to ="#" onClick={(e) => this.handleDelete(box.id)} >Delete</NavLink></button>
+                 </div>
+                <button><NavLink to ="#" onClick={(e) => this.handleDelete(this.props.id)} >Delete</NavLink></button>
+        
             </div>
             ))
         
@@ -42,12 +43,5 @@ import './Home.css'
 const mapStateToProps = state => ({
     boxes: state.boxes.items
 })
-
-// const mapDispatchToProps = dispatch => {
-//     return {
-//      addReview: review => dispatch({ type: "ADD_REVIEW",  review }),
-//      deleteReview: id => dispatch({type: 'DELETE_REVIEW', id})
-//     }
-//   }
 
 export default connect(mapStateToProps, {fetchBoxes, removeBox}) (Boxes);

@@ -15,20 +15,9 @@ class Api::BoxesController < ApplicationController
 
     end
 
-    def show
-        render :json => box
-    end
-
-    def update
-       if box.update(box_params)
-        render :json => box 
-       else
-        render :json => {message: box.errors}, status: 400
-       end
-    end
-
     def destroy
-        if box.destroy
+      
+        if box.delete
             render :json => {message: "box has been deleted"}, status: 204
         else
             render :json => {message: "box Not Deleted"}, status: 400

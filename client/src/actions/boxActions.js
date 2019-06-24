@@ -30,8 +30,8 @@ export const newBox = (input) => dispatch => {
 }
 
 
-export const removeBox = () => dispatch => {
-    fetch(apiUrl, {
+export const removeBox = (id) => dispatch => {
+    fetch(apiUrl + "/" + id,  {
         method: 'DELETE',
         headers: {
         'Content-Type': 'application/json'
