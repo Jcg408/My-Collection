@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import{connect} from 'react-redux';
 import {newBox} from '../actions/boxActions';
-import './Home.css';
+import '../components/Home.css';
 
  class BoxForm extends Component {
     constructor (props) {
@@ -32,9 +32,7 @@ import './Home.css';
             imgUrl: this.state.imgUrl
         })
         
-        
     }
-
    
     render() {
         return (    

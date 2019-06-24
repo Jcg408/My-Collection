@@ -13,9 +13,6 @@ const Navbar = () => {
                     <button><NavLink to="/info">Information / Resources</NavLink> </button>
                 </ul>
             </nav>
-               
-        
-   
     )
     
 }

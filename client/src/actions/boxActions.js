@@ -1,5 +1,7 @@
 import {FETCH_BOXES, NEW_BOX, REMOVE_BOX} from './types';
 
+
+
 const apiUrl = 'http://localhost:3001/api/boxes'
 
 export const fetchBoxes = ()=> dispatch =>{
@@ -27,11 +29,12 @@ export const newBox = (input) => dispatch => {
                 payload: boxData
             }))
             .catch(err => err)
+            
 }
 
 
-export const removeBox = (id) => dispatch => {
-    fetch(apiUrl + "/" + id,  {
+export const removeBox = () => dispatch => {
+    fetch(apiUrl,  {
         method: 'DELETE',
         headers: {
         'Content-Type': 'application/json'
@@ -39,8 +42,6 @@ export const removeBox = (id) => dispatch => {
     })
     .then(res => res.json())
     .then(data => dispatch ({
-        type: REMOVE_BOX,
-        payload:data
-
+        type: REMOVE_BOX
     }))
 }

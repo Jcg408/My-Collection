@@ -21,9 +21,9 @@ export default function (state = initialState, action) {
         case REMOVE_BOX: 
            return {
                ...state,
-               items: state.items.filter(item => item.id !== action.payload)
-
+               items: state.items.filter(item => item.id !== action)
            }
+           
         default:
             return state;
     }
