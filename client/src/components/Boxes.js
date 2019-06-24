@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {fetchBoxes} from '../actions/boxActions';
 import {removeBox} from '../actions/boxActions';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+import './Home.css'
+
 
  class Boxes extends Component {
      componentDidMount() {
@@ -15,17 +17,23 @@ import {Link} from 'react-router-dom';
      }
     render() {
         const boxItems = this.props.boxes.map(box => 
-            (<div key={box.id} className="container">
+            (<div key={box.id} className="jumbotron">
              <img src= {box.imgUrl} alt={box.name}/>
-             <h2>{box.name}</h2>
-             <p>{box.description} {box.size} - {box.year}</p>
-             <br/>
-             <Link to ="#" onClick={(e) => this.handleDelete(box.id)} >Delete</Link>
+             <React.Fragment>
+                 <div class="desc">
+                <h2>{box.name}</h2>
+                <p>{box.description} {box.size} - {box.year}</p>
+                <br/>
+                 </div>
+                
+             </React.Fragment>
+            
+             <button><NavLink to ="#" onClick={(e) => this.handleDelete(box.id)} >Delete</NavLink></button>
             </div>
             ))
         
         return (
-            <div>
+            <div className = "boxitems">
                 {boxItems}
             </div>
         )

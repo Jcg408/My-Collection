@@ -1,6 +1,7 @@
 body {
     background-image: url('/images/firebirdmain.jpg');
     background-size: cover;
+    font-family: Elephant, sans serif;
 }
 
 .container {
@@ -11,7 +12,12 @@ body {
    
 }
 h1 {
+    font-family: Elephant, sans-serif;
     font-size: 3.4em;
+}
+
+p {
+    font-size: 1.3em;
 }
 
 form {
@@ -32,4 +38,28 @@ input{
 
 button.addbox {
     color: white;
+}
+
+.jumbotron {
+    background-color: rgb(188, 222, 193);
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, serif
+}
+
+.desc {
+    width: 65%;
+    margin: auto;
+}
+
+.info {
+    width: 65%;
+    margin: 150px auto;
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(218, 245, 236);
+    opacity: 0.7;
+    font-weight: bold;
+    border-radius: 10px;
 }
