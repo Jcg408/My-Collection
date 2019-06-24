@@ -5,7 +5,7 @@ boxes = Box.create([
         Black lacquer exterior with gold filigree and red lacquer interior.',
         size: '3 x 3 x 1.5 inches',
         year: '1985',
-        imgUrl: '/images/atthewell.jpg'
+        imgUrl: '/images/atthewell.png'
     },
 
     {
@@ -14,7 +14,7 @@ boxes = Box.create([
         Black lacquer exterior with gold filigree, red lacquer interior, hinged top.',
         size: '7 x 5 x 1.5 inches',
         year: '2009',
-        imgUrl: '/images/babayaga.jpg'
+        imgUrl: '/images/babayaga.png'
     },
 
     {
@@ -22,7 +22,7 @@ boxes = Box.create([
         description: 'Fedoskino - Russian folk Tale of Emelya and the Magic Pike. Black lacquer exterior, red lacquer interior, hinged top .',
         size: '5.5 x 4.13 x 1.5 inches',
         year: '1992',
-        imgUrl: '/images/emelya.jpg'
+        imgUrl: '/images/emelya.png'
     },
 
     {
@@ -31,7 +31,7 @@ boxes = Box.create([
         Brighter colors on black lacquer exterior, red lacquer interior, hinged on left side, on 4 small legs, ',
         size: '9.25 x 7 x 1.63 inches',
         year: '1985',
-        imgUrl: '/images/goldencockerel.jpg'
+        imgUrl: '/images/goldencockerel.png'
     },
 
     {
@@ -39,7 +39,7 @@ boxes = Box.create([
         description: 'Palekh - Snowmaiden is the daughter of mortals, although she is made from winter snow. Black lacquer exterior, red lacquer interior, sides decorated with gold and silver filigree.',
         size: '3x3x1.5 inches',
         year: '1995',
-        imgUrl: '/images/snowmaiden.jpg'
+        imgUrl: '/images/snowmaiden.png'
     },
 
     {
@@ -47,7 +47,7 @@ boxes = Box.create([
         description: 'Fedoskino - Traditional Russian village winter scene. Mother of pearl inlay with gold outline on black lacquer, red lacquer interior, hinged top',
         size: '10 x 8 x 3 inches',
         year: '1978',
-        imgUrl: '/images/winter.jpg'
+        imgUrl: '/images/winter.png'
     },
 
     
@@ -56,16 +56,16 @@ boxes = Box.create([
         description: 'Mstera - Pushkin fairy tale. Ruslan is listening to the wise Finn. The Finn grants Ruslan the knowledge he needs in order to defeat the magic of Chernomor. Very ornate painting on black lacquer, red lacquer interior, hinged top',
         size: '13 x 8 x 3 inches',
         year: '2001',
-        imgUrl: '/images/ruslan.jpg'
+        imgUrl: '/images/ruslan.png'
     },
 
 
     {
-        name: 'Sivka Burka',
-        description: 'Kholui - The magical horse of Ivan the Simpleton who wins the princesses hand in marriage. Ornate painting on black lacquer, red lacquer interior, hinged top',
-        size: '13 x 8 x 3 inches',
+        name: 'Silver Hoof',
+        description: 'Kholui - Silver Hoof visits the home of Kokovanya and Daryonka to sprinkle jewels on the rooftop. Black lacquer, red lacquer interior, hinged top',
+        size: '8 x 6 x 3 inches',
         year: '1983',
-        imgUrl: '/images/sivkaburka.jpg'
+        imgUrl: '/images/silverhoof.png'
     }
 
     
