@@ -62,6 +62,12 @@ import '../css/Home.css';
                        <label>Image: </label>
                        <input type="text" onChange={this.handleChange} name="imgUrl" value={this.state.imgUrl}/>
                        <br/>
+                       <label>Artist: </label>
+                       <input type="text" onChange={this.handleChange} name="artist" value={this.state.artist}/>
+                       <br/>
+                       <label>Village: </label>
+                       <input type="text" onChange={this.handleChange} name="location" value={this.state.location}/>
+                       <br/>
                        <button className="addbox" type="submit" value="submit">Submit</button>
                    </div>
                 </form>

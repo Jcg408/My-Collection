@@ -8,7 +8,8 @@ class Api::BoxesController < ApplicationController
     def create
         box = Box.new(box_params)
         if box.save
-            render :json => box
+            render :json => box 
+            {message: 'box has been added'}
         else
             render :json => {message: box.errors}, status: 400
         end
@@ -29,6 +30,6 @@ class Api::BoxesController < ApplicationController
     end
 
     def box_params
-        params.require(:box).permit(:name, :description, :year, :size, :imgUrl )
+        params.require(:box).permit(:name, :description, :year, :size, :imgUrl, :artist, :location )
     end
 end
