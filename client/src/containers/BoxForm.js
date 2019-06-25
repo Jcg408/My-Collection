@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import{connect} from 'react-redux';
 import {newBox} from '../actions/boxActions';
-import '../components/Home.css';
+import '../css/Home.css';
 
  class BoxForm extends Component {
     constructor (props) {

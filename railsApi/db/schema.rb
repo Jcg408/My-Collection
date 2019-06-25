@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2019_06_20_193010) do
     t.string "size"
     t.string "year"
     t.string "imgUrl"
+    t.string "artist"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

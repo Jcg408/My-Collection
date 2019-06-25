@@ -1,12 +1,12 @@
 import React from 'react'
-import './Home.css';
+import '../css/Home.css';
 
 
- const Home = () => {
+const Home = () => {
     return (
-        <div className = "container">
+        <div className="container">
             <h1>My Collection </h1>
-            <br/>
+            <br />
             <h2>Russian Lacquer Art</h2>
 
             <footer>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css';
+import '../css/Navbar.css';
 import {NavLink} from 'react-router-dom';
 
 
@@ -11,6 +11,7 @@ const Navbar = () => {
                     <button><NavLink to="/boxes"> Inventory</NavLink> </button>
                     <button><NavLink to="/box/new">Add New Item</NavLink> </button>
                     <button><NavLink to="/info">Information / Resources</NavLink> </button>
+                    <button><NavLink to="/villages">Russian Villages</NavLink></button>
                 </ul>
             </nav>
     )

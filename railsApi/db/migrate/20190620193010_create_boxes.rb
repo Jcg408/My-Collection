@@ -6,6 +6,8 @@ class CreateBoxes < ActiveRecord::Migration[5.2]
       t.string :size
       t.string :year
       t.string :imgUrl
+      t.string :artist
+      t.string :location
 
       t.timestamps
     end
