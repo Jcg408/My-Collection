@@ -11,7 +11,10 @@ import '../css/Home.css';
             description: "",
             year: "",
             size: "",
-            imgUrl: ""
+            imgUrl: "",
+            artist: "",
+            location: ""
+
         }
     }
 
@@ -29,7 +32,9 @@ import '../css/Home.css';
             description: "",
             year: "",
             size: "",
-            imgUrl: ""
+            imgUrl: "",
+            artist: "",
+            location: ""
         })
         
     }
