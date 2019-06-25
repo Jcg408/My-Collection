@@ -42,7 +42,7 @@ button.addbox {
     background-color: rgb(188, 222, 193);
     text-align: center;
     width: 100%;
-    margin: 10px auto;
+    margin: auto;
     font-family: Cambria, Cochin, Georgia, Times, serif
 }
 
