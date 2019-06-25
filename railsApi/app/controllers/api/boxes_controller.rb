@@ -9,7 +9,7 @@ class Api::BoxesController < ApplicationController
         box = Box.new(box_params)
         if box.save
             render :json => box 
-            {message: 'box has been added'}
+            {alert: 'box has been added'}
         else
             render :json => {message: box.errors}, status: 400
         end

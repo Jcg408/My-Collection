@@ -23,7 +23,7 @@ class Boxes extends Component {
                     <p>Artist: {box.artist}</p>  <p>Village: {box.location}</p>
                     <br />
                 </div>
-                <button onClick={() => this.handleDelete(box.id)} >Delete</button>
+                <button onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) this.handleDelete(box.id)} }>Delete</button>
             </div>
 
             ))

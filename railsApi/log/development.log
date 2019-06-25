@@ -6694,3 +6694,82 @@ Processing by Api::BoxesController#index as */*
 Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/api/boxes" for ::1 at 2019-06-25 18:08:42 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"Tes", "description"=>"", "year"=>"", "size"=>"", "imgUrl"=>"", "artist"=>"", "location"=>"", "box"=>{"name"=>"Tes", "description"=>"", "size"=>"", "year"=>"", "imgUrl"=>"", "artist"=>"", "location"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (22.1ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tes"], ["description", ""], ["size", ""], ["year", ""], ["imgUrl", ""], ["artist", ""], ["location", ""], ["created_at", "2019-06-25 22:08:42.698962"], ["updated_at", "2019-06-25 22:08:42.698962"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 47ms (Views: 1.8ms | ActiveRecord: 25.2ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-25 18:09:03 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"test", "description"=>"test", "year"=>"1958", "size"=>"3 x 3 x 1.5", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"jo;iljk;lj", "location"=>";lkj;lkj;lkj", "box"=>{"name"=>"test", "description"=>"test", "size"=>"3 x 3 x 1.5", "year"=>"1958", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"jo;iljk;lj", "location"=>";lkj;lkj;lkj"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (1.1ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "test"], ["description", "test"], ["size", "3 x 3 x 1.5"], ["year", "1958"], ["imgUrl", "../public/smsunflower.jpg"], ["artist", "jo;iljk;lj"], ["location", ";lkj;lkj;lkj"], ["created_at", "2019-06-25 22:09:04.024097"], ["updated_at", "2019-06-25 22:09:04.024097"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-25 18:16:11 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.8ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/api/boxes/1" for ::1 at 2019-06-25 18:16:23 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"1", "box"=>{}}
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (6.5ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-25 18:45:56 -0400
+  [1m[35m (12.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"Sunflower Honey", "description"=>"russian lacquer", "year"=>"2005", "size"=>"3 x 3 x 1.5", "imgUrl"=>"/image/nutcracker.jpg", "artist"=>"sdfaljaf", "location"=>";jka;ljkadf", "box"=>{"name"=>"Sunflower Honey", "description"=>"russian lacquer", "size"=>"3 x 3 x 1.5", "year"=>"2005", "imgUrl"=>"/image/nutcracker.jpg", "artist"=>"sdfaljaf", "location"=>";jka;ljkadf"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (30.3ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sunflower Honey"], ["description", "russian lacquer"], ["size", "3 x 3 x 1.5"], ["year", "2005"], ["imgUrl", "/image/nutcracker.jpg"], ["artist", "sdfaljaf"], ["location", ";jka;ljkadf"], ["created_at", "2019-06-25 22:45:58.938231"], ["updated_at", "2019-06-25 22:45:58.938231"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (51.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 118ms (Views: 14.4ms | ActiveRecord: 84.4ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-25 18:53:02 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"Sunflower Honey", "description"=>"russian lacquer", "year"=>"1958", "size"=>"3 x 3 x 1.5", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"sdfaljaf", "location"=>"VA", "box"=>{"name"=>"Sunflower Honey", "description"=>"russian lacquer", "size"=>"3 x 3 x 1.5", "year"=>"1958", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"sdfaljaf", "location"=>"VA"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (38.6ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sunflower Honey"], ["description", "russian lacquer"], ["size", "3 x 3 x 1.5"], ["year", "1958"], ["imgUrl", "../public/smsunflower.jpg"], ["artist", "sdfaljaf"], ["location", "VA"], ["created_at", "2019-06-25 22:53:02.537567"], ["updated_at", "2019-06-25 22:53:02.537567"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 46ms (Views: 1.2ms | ActiveRecord: 40.4ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-25 18:53:30 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"Sunflower Honey", "description"=>"russian lacquer", "year"=>"1958", "size"=>"3 x 3 x 1.5", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"sdfaljaf", "location"=>"VA", "box"=>{"name"=>"Sunflower Honey", "description"=>"russian lacquer", "size"=>"3 x 3 x 1.5", "year"=>"1958", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"sdfaljaf", "location"=>"VA"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (0.7ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sunflower Honey"], ["description", "russian lacquer"], ["size", "3 x 3 x 1.5"], ["year", "1958"], ["imgUrl", "../public/smsunflower.jpg"], ["artist", "sdfaljaf"], ["location", "VA"], ["created_at", "2019-06-25 22:53:30.440191"], ["updated_at", "2019-06-25 22:53:30.440191"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 11.0ms)
+
+
