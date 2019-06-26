@@ -1,5 +1,5 @@
 My-Collection
-README Overview - React/Redux/Rails Final Project/Flatiron School/ J. Gladstone
+README Overview - React/Redux/Rails Final Project/Flatiron School/ J. Gladstone - June 2019
 
 Personal App for documenting my collection of Russian Lacquer Art. 
 
