@@ -36,7 +36,7 @@ import '../css/Home.css';
             artist: "",
             location: ""
         })
-        window.confirm("New Box Added!")
+       
     }
     
     

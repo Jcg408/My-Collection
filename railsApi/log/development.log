@@ -7446,3 +7446,470 @@ Processing by Api::NotesController#index as */*
 Completed 200 OK in 40ms (Views: 11.5ms | ActiveRecord: 14.6ms)
 
 
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:05:07 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (320.9ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 331ms (Views: 9.5ms | ActiveRecord: 320.9ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:07:38 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:07:48 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.8ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 159ms (Views: 157.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:10:24 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:13:13 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.4ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-26 16:19:56 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"sam", "description"=>"", "year"=>"", "size"=>"", "imgUrl"=>"", "artist"=>"", "location"=>"", "box"=>{"name"=>"sam", "description"=>"", "size"=>"", "year"=>"", "imgUrl"=>"", "artist"=>"", "location"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (35.5ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "sam"], ["description", ""], ["size", ""], ["year", ""], ["imgUrl", ""], ["artist", ""], ["location", ""], ["created_at", "2019-06-26 20:19:56.350430"], ["updated_at", "2019-06-26 20:19:56.350430"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 47ms (Views: 0.9ms | ActiveRecord: 37.6ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-26 16:22:14 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"box", "description"=>"beautiful lacquer box", "year"=>"1999", "size"=>"medium", "imgUrl"=>"l;kjjkll;jk", "artist"=>"me", "location"=>"fedoskino", "box"=>{"name"=>"box", "description"=>"beautiful lacquer box", "size"=>"medium", "year"=>"1999", "imgUrl"=>"l;kjjkll;jk", "artist"=>"me", "location"=>"fedoskino"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (0.8ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "box"], ["description", "beautiful lacquer box"], ["size", "medium"], ["year", "1999"], ["imgUrl", "l;kjjkll;jk"], ["artist", "me"], ["location", "fedoskino"], ["created_at", "2019-06-26 20:22:14.457631"], ["updated_at", "2019-06-26 20:22:14.457631"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (17.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:22:18 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (41.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 50ms (Views: 7.9ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:23:01 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/api/boxes/18" for ::1 at 2019-06-26 16:23:25 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"18", "box"=>{}}
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (2.6ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 3.1ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c1ca43b0>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/17" for ::1 at 2019-06-26 16:23:27 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"17", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (6.7ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 6.9ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c1cfabe8>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/16" for ::1 at 2019-06-26 16:23:34 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"16", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (5.9ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 6.1ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c483b168>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/15" for ::1 at 2019-06-26 16:23:35 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"15", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (6.7ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 7.0ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c1c7e700>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/14" for ::1 at 2019-06-26 16:23:36 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"14", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (2.1ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 2.4ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c1d0a1b0>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/13" for ::1 at 2019-06-26 16:23:37 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"13", "box"=>{}}
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (6.0ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 6.5ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c1737c60>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/12" for ::1 at 2019-06-26 16:23:39 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"12", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (6.0ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 6.2ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c1cd5848>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/11" for ::1 at 2019-06-26 16:23:40 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"11", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (2.1ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 2.3ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c17a7600>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/10" for ::1 at 2019-06-26 16:23:41 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"10", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (1.7ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 1.9ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c1794aa0>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started DELETE "/api/boxes/9" for ::1 at 2019-06-26 16:23:42 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"9", "box"=>{}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (5.9ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 6.2ms)
+
+
+  
+NameError (undefined local variable or method `boxes' for #<Api::BoxesController:0x00007fd2c174ec08>
+Did you mean?  @box):
+  
+app/controllers/api/boxes_controller.rb:20:in `destroy'
+Started GET "/api/boxes" for ::1 at 2019-06-26 16:23:54 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.4ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/notes" for ::1 at 2019-06-26 16:24:34 -0400
+Processing by Api::NotesController#create as */*
+  Parameters: {"subject"=>"test", "content"=>"This is a test of the National Broadcast System.", "note"=>{"subject"=>"test", "content"=>"This is a test of the National Broadcast System."}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/notes_controller.rb:9
+  [1m[36mNote Create (22.7ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "test"], ["content", "This is a test of the National Broadcast System."], ["created_at", "2019-06-26 20:24:34.110355"], ["updated_at", "2019-06-26 20:24:34.110355"]]
+  ↳ app/controllers/api/notes_controller.rb:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/notes_controller.rb:9
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/api/notes" for ::1 at 2019-06-26 16:24:36 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/notes_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/api/notes/5" for ::1 at 2019-06-26 16:24:41 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"5", "note"=>{}}
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/notes_controller.rb:17
+  [1m[36mNote Destroy (2.0ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/api/notes_controller.rb:18
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 2.3ms)
+
+
+  
+NameError (undefined local variable or method `notes' for #<Api::NotesController:0x00007fd2c1c24110>
+Did you mean?  not
+               @note):
+  
+app/controllers/api/notes_controller.rb:19:in `destroy'
+Started POST "/api/notes" for ::1 at 2019-06-26 16:35:12 -0400
+Processing by Api::NotesController#create as */*
+  Parameters: {"subject"=>"sdfadff", "content"=>"This is a note", "note"=>{"subject"=>"sdfadff", "content"=>"This is a note"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/notes_controller.rb:9
+  [1m[36mNote Create (0.6ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "sdfadff"], ["content", "This is a note"], ["created_at", "2019-06-26 20:35:12.612914"], ["updated_at", "2019-06-26 20:35:12.612914"]]
+  ↳ app/controllers/api/notes_controller.rb:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/notes_controller.rb:9
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/notes" for ::1 at 2019-06-26 16:35:29 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/notes_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/api/notes/6" for ::1 at 2019-06-26 16:35:31 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"6", "note"=>{}}
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/notes_controller.rb:17
+  [1m[36mNote Destroy (2.2ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/api/notes_controller.rb:18
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 2.5ms)
+
+
+  
+NameError (undefined local variable or method `notes' for #<Api::NotesController:0x00007fd2c1cc7838>
+Did you mean?  not
+               @note):
+  
+app/controllers/api/notes_controller.rb:19:in `destroy'
+Started GET "/api/notes" for ::1 at 2019-06-26 16:35:58 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/notes_controller.rb:4
+Completed 200 OK in 103ms (Views: 15.6ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/api/notes/4" for ::1 at 2019-06-26 16:36:03 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"4", "note"=>{}}
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/notes_controller.rb:17
+  [1m[36mNote Destroy (2.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/api/notes_controller.rb:18
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 2.4ms)
+
+
+  
+NameError (undefined local variable or method `note' for #<Api::NotesController:0x00007fd2c1581e98>
+Did you mean?  not
+               @note):
+  
+app/controllers/api/notes_controller.rb:19:in `destroy'
+Started GET "/api/notes" for ::1 at 2019-06-26 16:36:48 -0400
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/notes_controller.rb:4
+Completed 200 OK in 66ms (Views: 13.5ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/api/notes/3" for ::1 at 2019-06-26 16:36:50 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"3", "note"=>{}}
+  [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/notes_controller.rb:17
+  [1m[36mNote Destroy (2.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/api/notes_controller.rb:18
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mNote Load (1.5ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" LIMIT ?[0m  [["LIMIT", 11]]
+Started DELETE "/api/notes/2" for ::1 at 2019-06-26 16:37:35 -0400
+Processing by Api::NotesController#destroy as */*
+  Parameters: {"id"=>"2", "note"=>{}}
+  [1m[36mNote Load (0.2ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/notes_controller.rb:17
+  [1m[36mNote Destroy (2.1ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/api/notes_controller.rb:18
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+Migrating to CreateBoxes (20190620193010)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "boxes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "size" varchar, "year" varchar, "imgUrl" varchar, "artist" varchar, "location" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190620193010_create_boxes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190620193010"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+Migrating to CreateNotes (20190626161641)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "notes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190626161641_create_notes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190626161641"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-26 20:38:42.341300"], ["updated_at", "2019-06-26 20:38:42.341300"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.9ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "At the Well"], ["description", "Traditional Russian village scene of women retrieving water in a winter landscape. \n        Black lacquer exterior with gold filigree and red lacquer interior."], ["size", "3 x 3 x 1.5 inches"], ["year", "1985"], ["imgUrl", "/images/atthewell.png"], ["artist", "Baranov, Yuriy Gennadievich"], ["location", "Palekh"], ["created_at", "2019-06-26 20:38:47.499554"], ["updated_at", "2019-06-26 20:38:47.499554"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Baba Yaga"], ["description", "Russian folk tale, the witch Baba Yaga lives in a chicken footed hut and travels in a magical pestle. \n        Black lacquer exterior with gold filigree, red lacquer interior, hinged top."], ["size", "7 x 5 x 1.5 inches"], ["year", "2009"], ["imgUrl", "/images/babayaga.png"], ["artist", "Zhukov, Anatoliy Lvovna"], ["location", "Kholui"], ["created_at", "2019-06-26 20:38:47.505218"], ["updated_at", "2019-06-26 20:38:47.505218"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.3ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Emelya"], ["description", "Russian folk Tale of Emelya and the Magic Pike. Black lacquer exterior, red lacquer interior, hinged top ."], ["size", "5.5 x 4.13 x 1.5 inches"], ["year", "1992"], ["imgUrl", "/images/emelya.png"], ["artist", "Fomichov, Sergey Sergeevich"], ["location", "Fedoskino"], ["created_at", "2019-06-26 20:38:47.508631"], ["updated_at", "2019-06-26 20:38:47.508631"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.5ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Golden Cockerel"], ["description", "Russian folk tale about a ruthless Tsar who is given a golden cockerel who can warn him of danger, in return for a future wish. \n        Brighter colors on black lacquer exterior, red lacquer interior, hinged on left side, on 4 small legs, "], ["size", "9.25 x 7 x 1.63 inches"], ["year", "1985"], ["imgUrl", "/images/goldencockerel.png"], ["artist", "Denisenko, Anastasia"], ["location", "Palekh"], ["created_at", "2019-06-26 20:38:47.512192"], ["updated_at", "2019-06-26 20:38:47.512192"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.3ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Snegurochka"], ["description", "Snowmaiden is the daughter of mortals, although she is made from winter snow. Black lacquer exterior, red lacquer interior, sides decorated with gold and silver filigree."], ["size", "3x3x1.5 inches"], ["year", "1995"], ["imgUrl", "/images/snowmaiden.png"], ["artist", "Tsyganova, Olga Stepanovna"], ["location", "Palekh"], ["created_at", "2019-06-26 20:38:47.515978"], ["updated_at", "2019-06-26 20:38:47.515978"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Winter in Countryside"], ["description", "Traditional Russian village winter scene. Mother of pearl inlay with gold outline on black lacquer, red lacquer interior, hinged top"], ["size", "10 x 8 x 3 inches"], ["year", "1978"], ["imgUrl", "/images/winter.png"], ["artist", "Chikvasova, Marina Yurievna"], ["location", "Fedoskino"], ["created_at", "2019-06-26 20:38:47.519248"], ["updated_at", "2019-06-26 20:38:47.519248"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.3ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ruslan and Ludmilla"], ["description", "Pushkin fairy tale. Ruslan is listening to the wise Finn. The Finn grants Ruslan the knowledge he needs in order to defeat the magic of Chernomor. Very ornate painting on black lacquer, red lacquer interior, hinged top"], ["size", "13 x 8 x 3 inches"], ["year", "2001"], ["imgUrl", "/images/ruslan.png"], ["artist", "Mozhaev, Pavel Petrovich"], ["location", "Mstera"], ["created_at", "2019-06-26 20:38:47.522845"], ["updated_at", "2019-06-26 20:38:47.522845"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Silver Hoof"], ["description", "Silver Hoof visits the home of Kokovanya and Daryonka to sprinkle jewels on the rooftop. Black lacquer, red lacquer interior, hinged top"], ["size", "8 x 6 x 3 inches"], ["year", "1983"], ["imgUrl", "/images/silverhoof.png"], ["artist", "Kiseleova, Lubov Mikhailovna"], ["location", "Kholui"], ["created_at", "2019-06-26 20:38:47.526214"], ["updated_at", "2019-06-26 20:38:47.526214"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[36mNote Create (0.5ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "Authenticity certificate for Silver Hoof"], ["content", "Need to call Russia House and have them send an new certificate"], ["created_at", "2019-06-26 20:38:47.538915"], ["updated_at", "2019-06-26 20:38:47.538915"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[36mNote Create (0.4ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "Lovely box at Great Russina Gifts"], ["content", "Beautiful Morozco box from Mstera on website. Need to check artist and price"], ["created_at", "2019-06-26 20:38:47.542922"], ["updated_at", "2019-06-26 20:38:47.542922"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[36mNote Create (0.3ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "Send info to Martha about villages"], ["content", "Martha requested info about the villages and the differences in style. Hard to explain so I will email some info."], ["created_at", "2019-06-26 20:38:47.546298"], ["updated_at", "2019-06-26 20:38:47.546298"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:90

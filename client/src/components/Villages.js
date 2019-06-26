@@ -6,7 +6,7 @@ const Villages = () => {
 
     return (
         <div className='container' id="villages">
-
+            <h1>The Villages</h1>
             <h3 >Fedoskino</h3>
             <span><p>The use of oil paint, typically applied in many layers, is a distinctive feature of a Fedoskino miniature, as well as the use of mother-of-pearl, pure gold or silver leaf under segments of the background to create the effect of a shimmering glow or silvery sparkle. Many boxes are painted inside and outside in imitation tortoiseshell, birch bark, mahogany or tartan.
 

@@ -16,6 +16,7 @@ class Boxes extends Component {
     render() {
         const boxItems = this.props.boxes.map(box =>
             (<div key={box.id} className="jumbotron">
+
                 <img src={box.imgUrl} alt={box.name} />
                 <div className="desc">
                     <h2>{box.name}</h2>
@@ -23,13 +24,14 @@ class Boxes extends Component {
                     <p>Artist: {box.artist}</p>  <p>Village: {box.location}</p>
                     <br />
                 </div>
-                <button onClick={() => {if (window.confirm('Are you sure you wish to delete this item?')) this.handleDelete(box.id)} }>Delete</button>
+                <button onClick={() => {this.handleDelete(box.id)} }>Delete</button>
             </div>
 
             ))
 
         return (
             <div className="boxitems">
+                <h1>Collection</h1>
                 {boxItems}
             </div>
         )
