@@ -40,7 +40,7 @@ import '../css/Home.css';
                             <input type="text" onChange={this.handleChange} name="subject" value={this.state.subject} size='20' />
                             <br />
                             <label>Content:</label>
-                            <input type="text" onChange={this.handleChange} name="content" value={this.state.content} />
+                            <textarea type="text" onChange={this.handleChange} name="content" value={this.state.content} />
                             <br />
 
                             <button className="addnote" type="submit" value="submit">Submit</button>

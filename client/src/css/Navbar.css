@@ -21,7 +21,7 @@ button{
 section{
     float: right;
     margin-right: 50px;
-    border-color: rgb(182, 110, 3);
+    border-color: rgb(102, 47, 2);
     border-radius: 10px;
     border-width: 1px;
     border-style: dashed;
@@ -29,6 +29,5 @@ section{
 
 .today {
     padding:10px;
-    color: rgb(182, 110, 3);
-    
+    color: rgb(73, 30, 2)
 }
