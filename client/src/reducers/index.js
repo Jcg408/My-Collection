@@ -3,7 +3,7 @@ import boxReducer from './boxReducer';
 import noteReducer from './noteReducer';
 
 const rootReducer =  combineReducers({
-    boxes: boxReducer
+    boxes: boxReducer,
     notes: noteReducer
 });
 

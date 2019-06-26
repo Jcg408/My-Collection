@@ -1,4 +1,4 @@
-import {FETCH_NOTES, NEW_NOTE,  REMOVE_NOTE} from '../actions/types';
+import {FETCH_NOTES, NEW_NOTE, REMOVE_NOTE} from '../actions/types';
 
 const initialState = {
     items: [],
