@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {fetchNotes} from '../actions/noteActions';
 import {removeNote} from '../actions/noteActions';
-import '../components/Home.css'
+import '../css/Home.css'
 
 
  class Notes extends Component {
@@ -16,13 +16,12 @@ import '../components/Home.css'
      }
     render() {
         const noteItems = this.props.notes.map(note => 
-            (<div key={note.id} className="jumbotron">
-                    <h2>{note.subject}</h2>
+            (<div key={note.id} className="shownote">
+                    <h3>{note.subject}</h3>
                     <p>{note.content} </p>
                     <br/>
                  <button onClick={() => this.handleDelete(note.id)} >Delete</button>
             </div>
-            
             ))
         
         return (

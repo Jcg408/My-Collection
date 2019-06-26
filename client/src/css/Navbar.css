@@ -2,6 +2,10 @@ a {
     color: rgb(242, 247, 241);
     text-decoration: none;
 }
+ul {
+    margin-left: 230px;
+    padding-left:20px;
+}
 
 button{
  background-color: rgb(226, 109, 63);

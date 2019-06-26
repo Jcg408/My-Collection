@@ -1,5 +1,5 @@
 class Api::BoxesController < ApplicationController
-    before_action :set_box, only: [:show, :update, :destroy]
+    before_action :set_box, only: [:show, :destroy]
     
     def index
         render :json => Box.all
@@ -17,7 +17,7 @@ class Api::BoxesController < ApplicationController
 
     def destroy
         if @box.delete
-            render :json => {message: "box has been deleted"}
+            render :json => boxes
         else
             render :json => {message: "box Not Deleted"}
         end

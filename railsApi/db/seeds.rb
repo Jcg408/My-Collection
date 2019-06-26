@@ -87,3 +87,20 @@ boxes = Box.create([
     
 ])
 
+notes = Note.create([
+    {
+        subject: 'Authenticity certificate for Silver Hoof',
+        content: 'Need to call Russia House and have them send an new certificate'
+    },
+
+    {
+        subject: 'Lovely box at Great Russina Gifts',
+        content: 'Beautiful Morozco box from Mstera on website. Need to check artist and price'
+    },
+
+    {
+        subject: 'Send info to Martha about villages',
+        content: 'Martha requested info about the villages and the differences in style. Hard to explain so I will email some info.'
+
+    }
+])

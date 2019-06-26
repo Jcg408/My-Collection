@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import{connect} from 'react-redux';
 import {newNote} from '../actions/noteActions';
-import '../components/Home.css';
+import '../css/Home.css';
 
  class NoteForm extends Component {
     constructor (props) {
@@ -28,26 +28,29 @@ import '../components/Home.css';
     }
    
     render() {
-       
-        return (    
-            <div className= 'container'>
-                <h2>Notes: </h2>
+        return (
+            <div classname="container">
+                <div className='noteform'>
+                   
 
-                <form onSubmit={this.handleSubmit}>
-                   <div className="notes">
-                       <label>Subject:</label>
-                       <input type="text" onChange={this.handleChange} name ="subject" value={this.state.subject}/>
-                        <br/>
-                       <label>Content:</label>
-                       <textarea type="text" onChange={this.handleChange} name ="content" value={this.state.content}/>
-                       <br/>
-                      
-                       <button className="addnote" type="submit" value="submit">Submit</button>
-                   </div>
-                </form>
-                
+                    <form onSubmit={this.handleSubmit}>
+                        <div >
+                             <h2>Notes: </h2>
+                            <label>Subject:</label>
+                            <input type="text" onChange={this.handleChange} name="subject" value={this.state.subject} size='20' />
+                            <br />
+                            <label>Content:</label>
+                            <input type="text" onChange={this.handleChange} name="content" value={this.state.content} />
+                            <br />
+
+                            <button className="addnote" type="submit" value="submit">Submit</button>
+                        </div>
+                    </form>
+
+
+                </div>
             </div>
         )
     }
 }
-export default connect(null, {newNote})(NoteForm);
+export default connect(null, { newNote })(NoteForm);
