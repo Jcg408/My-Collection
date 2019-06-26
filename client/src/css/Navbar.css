@@ -14,3 +14,17 @@ button{
  font-size: 1.2em;
 
 }
+section{
+    float: right;
+    margin-right: 50px;
+    border-color: rgb(182, 110, 3);
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.today {
+    padding:10px;
+    color: rgb(182, 110, 3);
+    
+}

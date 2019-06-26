@@ -1,4 +1,4 @@
-mport React, { Component } from 'react';
+import React, { Component } from 'react';
 
 class Today extends Component {
     constructor() {
@@ -8,7 +8,11 @@ class Today extends Component {
   
     render() { 
         return ( 
-            <h1> Today: {this.state.today.toLocaleTimeString()}</h1>
+            <div>
+                <h3>  {this.state.today.toLocaleDateString()}</h3>
+                <h4> {this.state.today.toLocaleTimeString()}</h4>
+            </div>
+            
          );
     }
 }
