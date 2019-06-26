@@ -6773,3 +6773,193 @@ Processing by Api::BoxesController#create as */*
 Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 11.0ms)
 
 
+Started GET "/api/boxes" for ::1 at 2019-06-25 19:26:25 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 129ms (Views: 123.3ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/api/boxes/2" for ::1 at 2019-06-25 19:26:54 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"2", "box"=>{}}
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (18.5ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 200 OK in 91ms (Views: 0.4ms | ActiveRecord: 19.0ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-25 19:27:40 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"Sunflower Honey", "description"=>"russian lacquer", "year"=>"1958", "size"=>"3 x 3 x 1.5", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"sdfaljaf", "location"=>"VA", "box"=>{"name"=>"Sunflower Honey", "description"=>"russian lacquer", "size"=>"3 x 3 x 1.5", "year"=>"1958", "imgUrl"=>"../public/smsunflower.jpg", "artist"=>"sdfaljaf", "location"=>"VA"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (11.6ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sunflower Honey"], ["description", "russian lacquer"], ["size", "3 x 3 x 1.5"], ["year", "1958"], ["imgUrl", "../public/smsunflower.jpg"], ["artist", "sdfaljaf"], ["location", "VA"], ["created_at", "2019-06-25 23:27:40.401833"], ["updated_at", "2019-06-25 23:27:40.401833"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-25 19:27:47 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (34.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (41.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+Migrating to CreateBoxes (20190620193010)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "boxes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "size" varchar, "year" varchar, "imgUrl" varchar, "artist" varchar, "location" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190620193010_create_boxes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190620193010"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-25 23:28:55.382455"], ["updated_at", "2019-06-25 23:28:55.382455"]]
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jessicagladstone/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.7ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "At the Well"], ["description", "Traditional Russian village scene of women retrieving water in a winter landscape. \n        Black lacquer exterior with gold filigree and red lacquer interior."], ["size", "3 x 3 x 1.5 inches"], ["year", "1985"], ["imgUrl", "/images/atthewell.png"], ["artist", "Baranov, Yuriy Gennadievich"], ["location", "Palekh"], ["created_at", "2019-06-25 23:29:26.650190"], ["updated_at", "2019-06-25 23:29:26.650190"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Baba Yaga"], ["description", "Russian folk tale, the witch Baba Yaga lives in a chicken footed hut and travels in a magical pestle. \n        Black lacquer exterior with gold filigree, red lacquer interior, hinged top."], ["size", "7 x 5 x 1.5 inches"], ["year", "2009"], ["imgUrl", "/images/babayaga.png"], ["artist", "Zhukov, Anatoliy Lvovna"], ["location", "Kholui"], ["created_at", "2019-06-25 23:29:26.655378"], ["updated_at", "2019-06-25 23:29:26.655378"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.3ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Emelya"], ["description", "Russian folk Tale of Emelya and the Magic Pike. Black lacquer exterior, red lacquer interior, hinged top ."], ["size", "5.5 x 4.13 x 1.5 inches"], ["year", "1992"], ["imgUrl", "/images/emelya.png"], ["artist", "Fomichov, Sergey Sergeevich"], ["location", "Fedoskino"], ["created_at", "2019-06-25 23:29:26.659045"], ["updated_at", "2019-06-25 23:29:26.659045"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Golden Cockerel"], ["description", "Russian folk tale about a ruthless Tsar who is given a golden cockerel who can warn him of danger, in return for a future wish. \n        Brighter colors on black lacquer exterior, red lacquer interior, hinged on left side, on 4 small legs, "], ["size", "9.25 x 7 x 1.63 inches"], ["year", "1985"], ["imgUrl", "/images/goldencockerel.png"], ["artist", "Denisenko, Anastasia"], ["location", "Palekh"], ["created_at", "2019-06-25 23:29:26.662655"], ["updated_at", "2019-06-25 23:29:26.662655"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Snegurochka"], ["description", "Snowmaiden is the daughter of mortals, although she is made from winter snow. Black lacquer exterior, red lacquer interior, sides decorated with gold and silver filigree."], ["size", "3x3x1.5 inches"], ["year", "1995"], ["imgUrl", "/images/snowmaiden.png"], ["artist", "Tsyganova, Olga Stepanovna"], ["location", "Palekh"], ["created_at", "2019-06-25 23:29:26.666904"], ["updated_at", "2019-06-25 23:29:26.666904"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Winter in Countryside"], ["description", "Traditional Russian village winter scene. Mother of pearl inlay with gold outline on black lacquer, red lacquer interior, hinged top"], ["size", "10 x 8 x 3 inches"], ["year", "1978"], ["imgUrl", "/images/winter.png"], ["artist", "Chikvasova, Marina Yurievna"], ["location", "Fedoskino"], ["created_at", "2019-06-25 23:29:26.670458"], ["updated_at", "2019-06-25 23:29:26.670458"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.4ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ruslan and Ludmilla"], ["description", "Pushkin fairy tale. Ruslan is listening to the wise Finn. The Finn grants Ruslan the knowledge he needs in order to defeat the magic of Chernomor. Very ornate painting on black lacquer, red lacquer interior, hinged top"], ["size", "13 x 8 x 3 inches"], ["year", "2001"], ["imgUrl", "/images/ruslan.png"], ["artist", "Mozhaev, Pavel Petrovich"], ["location", "Mstera"], ["created_at", "2019-06-25 23:29:26.674379"], ["updated_at", "2019-06-25 23:29:26.674379"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (0.3ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Silver Hoof"], ["description", "Silver Hoof visits the home of Kokovanya and Daryonka to sprinkle jewels on the rooftop. Black lacquer, red lacquer interior, hinged top"], ["size", "8 x 6 x 3 inches"], ["year", "1983"], ["imgUrl", "/images/silverhoof.png"], ["artist", "Kiseleova, Lubov Mikhailovna"], ["location", "Kholui"], ["created_at", "2019-06-25 23:29:26.678093"], ["updated_at", "2019-06-25 23:29:26.678093"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+Started GET "/api/boxes" for ::1 at 2019-06-25 19:31:08 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/api/boxes/1" for ::1 at 2019-06-25 19:31:56 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"1", "box"=>{}}
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (17.4ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 17.8ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-25 19:33:15 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"Another Box", "description"=>"Lovely lacquer box", "year"=>"2004", "size"=>"3 x 3 x 1.5", "imgUrl"=>"no image", "artist"=>"V. Someboddy", "location"=>"Palekh", "box"=>{"name"=>"Another Box", "description"=>"Lovely lacquer box", "size"=>"3 x 3 x 1.5", "year"=>"2004", "imgUrl"=>"no image", "artist"=>"V. Someboddy", "location"=>"Palekh"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (0.8ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Another Box"], ["description", "Lovely lacquer box"], ["size", "3 x 3 x 1.5"], ["year", "2004"], ["imgUrl", "no image"], ["artist", "V. Someboddy"], ["location", "Palekh"], ["created_at", "2019-06-25 23:33:15.144902"], ["updated_at", "2019-06-25 23:33:15.144902"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-25 19:33:18 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-06-25 19:41:33 -0400
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.6ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/api/boxes/3" for ::1 at 2019-06-25 19:42:14 -0400
+Processing by Api::BoxesController#destroy as */*
+  Parameters: {"id"=>"3", "box"=>{}}
+  [1m[36mBox Load (0.6ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/boxes_controller.rb:29
+  [1m[36mBox Destroy (55.5ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/api/boxes_controller.rb:19
+Completed 200 OK in 60ms (Views: 0.3ms | ActiveRecord: 56.1ms)
+
+
+Started POST "/api/boxes" for ::1 at 2019-06-25 19:42:38 -0400
+Processing by Api::BoxesController#create as */*
+  Parameters: {"name"=>"Sunflower Honey", "description"=>"blah", "year"=>"2005", "size"=>"a medium box", "imgUrl"=>"test", "artist"=>"sdfaljaf", "location"=>"Palekh", "box"=>{"name"=>"Sunflower Honey", "description"=>"blah", "size"=>"a medium box", "year"=>"2005", "imgUrl"=>"test", "artist"=>"sdfaljaf", "location"=>"Palekh"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[36mBox Create (62.1ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sunflower Honey"], ["description", "blah"], ["size", "a medium box"], ["year", "2005"], ["imgUrl", "test"], ["artist", "sdfaljaf"], ["location", "Palekh"], ["created_at", "2019-06-25 23:42:38.357871"], ["updated_at", "2019-06-25 23:42:38.357871"]]
+  ↳ app/controllers/api/boxes_controller.rb:10
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/boxes_controller.rb:10
+Completed 200 OK in 72ms (Views: 0.8ms | ActiveRecord: 64.5ms)
+
+

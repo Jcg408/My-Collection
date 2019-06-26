@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Navbar.css';
-import {NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom'
+import Today from './containers/Today';
 
 
 const Navbar = () => {
@@ -13,6 +14,7 @@ const Navbar = () => {
                     <button><NavLink to="/info">Information / Resources</NavLink> </button>
                     <button><NavLink to="/villages">Russian Villages</NavLink></button>
                 </ul>
+                <Today/>
             </nav>
     )
     
