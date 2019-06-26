@@ -7,7 +7,6 @@ import BoxForm from '../containers/BoxForm';
 import NoteForm from '../containers/NoteForm';
 import Notes from '../containers/Notes';
 import Navbar from './Navbar';
-
 import Villages from './Villages';
 import {Switch, Route} from 'react-router-dom';
 
