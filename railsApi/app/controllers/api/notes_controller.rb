@@ -18,7 +18,7 @@ class Api::NotesController < ApplicationController
         if @note.delete
             render :json => @note
         else
-            render :json => {message: "note Not Deleted"}
+            render :json => {message: "Note Not Deleted"}
         end
     end
 

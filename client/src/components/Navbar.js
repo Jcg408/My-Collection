@@ -3,7 +3,6 @@ import '../css/Navbar.css';
 import {NavLink} from 'react-router-dom'
 import Today from '../containers/Today';
 
-
 const Navbar = () => {
     return(
     <nav className='navbar'>
@@ -19,9 +18,7 @@ const Navbar = () => {
                 <section className='today'>
                     <Today/>
                 </section>
-                
             </nav>
     )
-    
 }
  export default Navbar;

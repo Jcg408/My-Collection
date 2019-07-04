@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/Home.css';
 
-
 const Home = () => {
     return (
         <div className="container">
@@ -9,15 +8,12 @@ const Home = () => {
             <br />
             <h2>Russian Lacquer Art</h2>
 
-            <footer>
+            <span>
                 J. Gladstone
-                6/2019
-                Flatiron Project
-            </footer>
+                June 2019
+                Flatiron Final Project
+            </span>
         </div>
     )
 }
 export default Home;
-
-
-

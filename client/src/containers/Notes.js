@@ -17,7 +17,7 @@ import '../css/Home.css'
     render() {
         const noteItems = this.props.notes.map(note => 
             (<div key={note.id} className="shownote">
-                    <h3>{note.subject}</h3>
+                    <h3>{note.id}.  {note.subject}</h3>
                     <p>{note.content} </p>
                     <br/>
                  <button onClick={() => this.handleDelete(note.id)} >Delete</button>

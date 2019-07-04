@@ -11,12 +11,11 @@ class Boxes extends Component {
 
     handleDelete = (boxid) => {
         this.props.removeBox(boxid);
-
     }
+    
     render() {
         const boxItems = this.props.boxes.map(box =>
             (<div key={box.id} className="jumbotron">
-
                 <img src={box.imgUrl} alt={box.name} />
                 <div className="desc">
                     <h2>{box.name}</h2>

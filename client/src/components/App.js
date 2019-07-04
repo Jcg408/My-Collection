@@ -10,8 +10,6 @@ import Navbar from './Navbar';
 import Villages from './Villages';
 import {Switch, Route} from 'react-router-dom';
 
-
-
 function App() {
   return (
        <div className="App">
@@ -29,7 +27,6 @@ function App() {
             
             </Switch>
          </div>
-         
       </div> 
   );
 }

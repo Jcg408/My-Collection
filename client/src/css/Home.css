@@ -17,7 +17,7 @@ h1 {
 
 
 p {
-    font-size: 1.3em;
+    font-size: 1.33em;
 }
 
 form {
@@ -57,10 +57,10 @@ button.addbox {
 
 .info {
     width: 65%;
-    margin: 145px auto;
+    margin: 90px auto;
     padding: 10px;
     text-align: left;
-    background-color: rgb(218, 245, 236);
+    background-color: rgb(220, 240, 233);
     opacity: 0.7;
     font-weight: bold;
     border-radius: 10px;

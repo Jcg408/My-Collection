@@ -4,7 +4,6 @@ import '../css/Home.css'
 
  const Info = () => {
     return (
-
         <div className="info">
             <h2> Resources for Russian Lacquer Art</h2><br/>
 
@@ -14,7 +13,6 @@ import '../css/Home.css'
                 panels developed, the items were lacquered and then hand painted by the artists, often with scenes from 
                 folk tales.</span></p>
 
-
                 <hr/>
             
             <h3> Russian American Company -</h3>
@@ -23,8 +21,6 @@ import '../css/Home.css'
             <p>https://www.fromrussia.com/russian-gifts/lacquer-boxes</p>
             <h3>Sunbirds.com -</h3>
             <p>https://www.sunbirds.com</p>
-              
-             
         </div>
     )
 }
