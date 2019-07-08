@@ -24,7 +24,6 @@ function App() {
               <Route exact path='/notes' component={Notes} />
               <Route exact path='/info' component={Info} />
               <Route exact path='/villages' component={Villages}/>
-            
             </Switch>
          </div>
       </div> 

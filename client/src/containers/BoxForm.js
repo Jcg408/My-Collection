@@ -14,7 +14,6 @@ import '../css/Home.css';
             imgUrl: "",
             artist: "",
             location: ""
-
         }
     }
 
@@ -25,7 +24,9 @@ import '../css/Home.css';
     }
 
     handleSubmit = (event) => {
+        console.log('A');
         this.props.newBox(this.state);
+        console.log('B');
         event.preventDefault();
         this.setState({
             name: "",
@@ -36,9 +37,7 @@ import '../css/Home.css';
             artist: "",
             location: ""
         })
-       
     }
-    
     
     render() {
         return (    
@@ -73,7 +72,6 @@ import '../css/Home.css';
                        <button className="addbox" type="submit" value="submit">Submit</button>
                    </div>
                 </form>
-                
             </div>
         )
     }

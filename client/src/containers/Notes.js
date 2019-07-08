@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {fetchNotes} from '../actions/noteActions';
 import {removeNote} from '../actions/noteActions';
+import Counter from './Counter';
 import '../css/Home.css'
 
 
@@ -12,8 +13,8 @@ import '../css/Home.css'
 
      handleDelete =(noteid) => {
          this.props.removeNote(noteid);
-       
      }
+     
     render() {
         const noteItems = this.props.notes.map(note => 
             (<div key={note.id} className="shownote">
@@ -21,7 +22,8 @@ import '../css/Home.css'
                     <p>{note.content} </p>
                     <br/>
                  <button onClick={() => this.handleDelete(note.id)} >Delete</button>
-            </div>
+                 <Counter  />
+            </div> 
             ))
         
         return (

@@ -15,6 +15,7 @@ export const fetchBoxes = ()=> dispatch =>{
 }
 
 export const newBox = (input) => dispatch => {
+    console.log('C');
     fetch(apiUrl, {
             method: 'POST',
             headers: {
@@ -23,12 +24,13 @@ export const newBox = (input) => dispatch => {
             body: JSON.stringify(input)
         })
             .then(res => res.json())
-            .then(boxData => dispatch ({
+            .then(boxData => {
+                console.log('D');
+                dispatch ({
                 type: NEW_BOX,
                 payload: boxData
-            }))
+            })})
             .catch(err => err)
-            
 }
 
 
