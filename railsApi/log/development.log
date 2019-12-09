@@ -8736,3 +8736,118 @@ Processing by Api::NotesController#index as */*
 Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
 
 
+  [1m[36mBox Load (1.3ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (182.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (150.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBoxes (20190620193010)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "boxes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "size" varchar, "year" varchar, "imgUrl" varchar, "artist" varchar, "location" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190620193010_create_boxes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190620193010"]]
+  ↳ bin/rails:9
+  [1m[35m (186.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateNotes (20190626161641)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "notes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190626161641_create_notes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190626161641"]]
+  ↳ bin/rails:9
+  [1m[35m (164.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-09 17:34:36.355478"], ["updated_at", "2019-12-09 17:34:36.355478"]]
+  ↳ bin/rails:9
+  [1m[35m (160.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (2.1ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "At the Well"], ["description", "Traditional Russian village scene of women retrieving water in a winter landscape. \n        Black lacquer exterior with gold filigree and red lacquer interior."], ["size", "3 x 3 x 1.5 inches"], ["year", "1985"], ["imgUrl", "/images/atthewell.png"], ["artist", "Baranov, Yuriy Gennadievich"], ["location", "Palekh"], ["created_at", "2019-12-09 17:42:54.110923"], ["updated_at", "2019-12-09 17:42:54.110923"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (144.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (1.7ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Baba Yaga"], ["description", "Russian folk tale, the witch Baba Yaga lives in a chicken footed hut and travels in a magical pestle. \n        Black lacquer exterior with gold filigree, red lacquer interior, hinged top."], ["size", "7 x 5 x 1.5 inches"], ["year", "2009"], ["imgUrl", "/images/babayaga.png"], ["artist", "Zhukov, Anatoliy Lvovna"], ["location", "Kholui"], ["created_at", "2019-12-09 17:42:54.263645"], ["updated_at", "2019-12-09 17:42:54.263645"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (114.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (1.9ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Emelya"], ["description", "Russian folk Tale of Emelya and the Magic Pike. Black lacquer exterior, red lacquer interior, hinged top ."], ["size", "5.5 x 4.13 x 1.5 inches"], ["year", "1992"], ["imgUrl", "/images/emelya.png"], ["artist", "Fomichov, Sergey Sergeevich"], ["location", "Fedoskino"], ["created_at", "2019-12-09 17:42:54.382593"], ["updated_at", "2019-12-09 17:42:54.382593"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (118.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (1.9ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Golden Cockerel"], ["description", "Russian folk tale about a ruthless Tsar who is given a golden cockerel who can warn him of danger, in return for a future wish. \n        Brighter colors on black lacquer exterior, red lacquer interior, hinged on left side, on 4 small legs, "], ["size", "9.25 x 7 x 1.63 inches"], ["year", "1985"], ["imgUrl", "/images/goldencockerel.png"], ["artist", "Denisenko, Anastasia"], ["location", "Palekh"], ["created_at", "2019-12-09 17:42:54.508435"], ["updated_at", "2019-12-09 17:42:54.508435"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (139.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (1.9ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Snegurochka"], ["description", "Snowmaiden is the daughter of mortals, although she is made from winter snow. Black lacquer exterior, red lacquer interior, sides decorated with gold and silver filigree."], ["size", "3x3x1.5 inches"], ["year", "1995"], ["imgUrl", "/images/snowmaiden.png"], ["artist", "Tsyganova, Olga Stepanovna"], ["location", "Palekh"], ["created_at", "2019-12-09 17:42:54.655276"], ["updated_at", "2019-12-09 17:42:54.655276"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (136.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (2.6ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Winter in Countryside"], ["description", "Traditional Russian village winter scene. Mother of pearl inlay with gold outline on black lacquer, red lacquer interior, hinged top"], ["size", "10 x 8 x 3 inches"], ["year", "1978"], ["imgUrl", "/images/winter.png"], ["artist", "Chikvasova, Marina Yurievna"], ["location", "Fedoskino"], ["created_at", "2019-12-09 17:42:54.801182"], ["updated_at", "2019-12-09 17:42:54.801182"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (154.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (3.3ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ruslan and Ludmilla"], ["description", "Pushkin fairy tale. Ruslan is listening to the wise Finn. The Finn grants Ruslan the knowledge he needs in order to defeat the magic of Chernomor. Very ornate painting on black lacquer, red lacquer interior, hinged top"], ["size", "13 x 8 x 3 inches"], ["year", "2001"], ["imgUrl", "/images/ruslan.png"], ["artist", "Mozhaev, Pavel Petrovich"], ["location", "Mstera"], ["created_at", "2019-12-09 17:42:54.964698"], ["updated_at", "2019-12-09 17:42:54.964698"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (167.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mBox Create (1.7ms)[0m  [1m[32mINSERT INTO "boxes" ("name", "description", "size", "year", "imgUrl", "artist", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Silver Hoof"], ["description", "Silver Hoof visits the home of Kokovanya and Daryonka to sprinkle jewels on the rooftop. Black lacquer, red lacquer interior, hinged top"], ["size", "8 x 6 x 3 inches"], ["year", "1983"], ["imgUrl", "/images/silverhoof.png"], ["artist", "Kiseleova, Lubov Mikhailovna"], ["location", "Kholui"], ["created_at", "2019-12-09 17:42:55.142232"], ["updated_at", "2019-12-09 17:42:55.142232"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (135.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[36mNote Create (1.5ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "Authenticity certificate for Silver Hoof"], ["content", "Need to call Russia House and have them send an new certificate"], ["created_at", "2019-12-09 17:42:55.304832"], ["updated_at", "2019-12-09 17:42:55.304832"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (144.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[36mNote Create (3.3ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "Lovely box at Great Russina Gifts"], ["content", "Beautiful Morozco box from Mstera on website. Need to check artist and price"], ["created_at", "2019-12-09 17:42:55.454755"], ["updated_at", "2019-12-09 17:42:55.454755"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (169.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[36mNote Create (1.8ms)[0m  [1m[32mINSERT INTO "notes" ("subject", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["subject", "Send info to Martha about villages"], ["content", "Martha requested info about the villages and the differences in style. Hard to explain so I will email some info."], ["created_at", "2019-12-09 17:42:55.631540"], ["updated_at", "2019-12-09 17:42:55.631540"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (153.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:90
+  [1m[36mBox Load (19.7ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-12-09 12:52:41 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/railties-5.2.4/lib/rails/templates/rails/welcome/index.html.erb (77.1ms)
+Completed 200 OK in 662ms (Views: 321.8ms | ActiveRecord: 0.0ms)
+
+
