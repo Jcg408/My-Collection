@@ -8,16 +8,11 @@ body {
     margin: 90px auto;
     text-align: center;
     width: 80%;
-    color: rgb(73, 30, 2)
-   
+    color: rgb(37, 16, 2)
 }
-h1 {
-    font-size: 3.35em;
-}
-
 
 p {
-    font-size: 1.33em;
+    font-size: 1.5rem;
 }
 
 form {

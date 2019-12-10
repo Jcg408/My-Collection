@@ -1,13 +1,17 @@
 .navbar {
-    margin: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    max-height: 60px;
 }
+
 a {
     color: rgb(242, 247, 241);
     text-decoration: none;
 }
 ul {
-    margin-left: 230px;
-    padding-left:20px;
+    position: relative;
+    margin: auto;
+    width: 80%;
 }
 
 button{
@@ -17,19 +21,22 @@ button{
  border-radius: 5px;
  padding: 5px;
  margin: 2px;
- font-size: 1.2em;
+ font-size: 1.5rem;
 
 }
 section{
     float: right;
     margin-right: 80px;
-    border-color: rgb(102, 47, 2);
+    border-color: rgb(48, 20, 1);
     border-radius: 10px;
     border-width: 1px;
     border-style: dashed;
 }
 
 .today {
+    float: right;
+    margin: 30px ;
     padding:10px;
-    color: rgb(73, 30, 2)
+    color: rgb(48, 20, 1);
+    font-weight: bold;
 }
