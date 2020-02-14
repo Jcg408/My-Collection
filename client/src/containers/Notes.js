@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {fetchNotes} from '../actions/noteActions';
 import {removeNote} from '../actions/noteActions';
 import Counter from './Counter';
-import '../css/Home.css'
+
 
 
  class Notes extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import{connect} from 'react-redux';
 import {newNote} from '../actions/noteActions';
-import '../css/Home.css';
+
 
  class NoteForm extends Component {
     constructor (props) {

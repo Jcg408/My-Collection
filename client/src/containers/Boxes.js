@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { fetchBoxes } from '../actions/boxActions';
 import { removeBox } from '../actions/boxActions';
-import '../css/boxes.css'
+import '../css/Boxes.css'
 
 class Boxes extends Component {
     componentDidMount() {
@@ -16,16 +16,19 @@ class Boxes extends Component {
     render() {
         const boxItems = this.props.boxes.map(box =>
             (<div key={box.id} className="container">
-                <img src={box.imgUrl} alt={box.name} />
-                <div className="container">
-                    <h3>{box.name}</h3>
+                <div className="row">
+                    <div className = "col md-4 mt-4">
+                          <img src={box.imgUrl} alt={box.name} />
+                         
+                    </div>
+                    <div className = "col md-6 mt-4">
+                          <h3>{box.name}</h3>
                     <p>{box.description} {box.size} - {box.year}</p>
                     <p>Artist: {box.artist}</p>  <p>Village: {box.location}</p>
-                    <br />
+                     <button onClick={() => {this.handleDelete(box.id)} }>Delete</button>
+                    </div>
                 </div>
-                <button onClick={() => {this.handleDelete(box.id)} }>Delete</button>
             </div>
-
             ))
 
         return (

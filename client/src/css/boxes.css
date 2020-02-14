@@ -1,0 +1,10 @@
+  .boxes {
+    background-image: none;
+    background-color: rgb(188, 222, 193);
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    
+
+}
