@@ -9,8 +9,8 @@ class Today extends Component {
     render() { 
         return ( 
             <div>
-                <h3>  {this.state.today.toLocaleDateString()}</h3>
-                <h4> {this.state.today.toLocaleTimeString()}</h4>
+                <p>  {this.state.today.toLocaleDateString()}</p>
+                <p> {this.state.today.toLocaleTimeString()}</p>
             </div>
             
          );

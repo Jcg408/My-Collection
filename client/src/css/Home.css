@@ -1,6 +1,8 @@
 body {
     background-image: url('/images/firebirdmain.jpg');
     background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .container {
@@ -41,7 +43,7 @@ button.addbox {
     background-color: rgb(188, 222, 193);
     background-size: cover;
     text-align: center;
-    width: 100%;
+    
     margin: auto;
 }
 
@@ -97,7 +99,15 @@ textarea {
     outline: none;
 }
 
-.boxitems  h1{
+.boxitems {
+    position: relative;
+    margin: auto;
+    width: 100%;
     text-align: center;
-    margin-top: 5px;
 }
+.boxitems h1 {
+    margin:auto;
+    width: 100%,
+
+}
+

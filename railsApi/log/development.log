@@ -8851,3 +8851,205 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 662ms (Views: 321.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:29:24 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.8ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 172ms (Views: 124.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/notes" for ::1 at 2019-12-09 19:29:30 -0500
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/notes_controller.rb:4
+Completed 200 OK in 132ms (Views: 66.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:31:05 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:31:57 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.8ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 331ms (Views: 329.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:37:57 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 488ms (Views: 485.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:38:25 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.6ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 425ms (Views: 423.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:45:29 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.9ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 127ms (Views: 125.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:48:19 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.0ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:49:25 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (2.1ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 301ms (Views: 298.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:55:19 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boxes" for ::1 at 2019-12-09 19:58:12 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.7ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/notes" for ::1 at 2019-12-09 19:58:19 -0500
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/notes_controller.rb:4
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-10 11:09:17 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4/lib/rails/templates/rails/welcome/index.html.erb (10.1ms)
+Completed 200 OK in 230ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 13:57:30 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4/lib/rails/templates/rails/welcome/index.html.erb (36.0ms)
+Completed 200 OK in 373ms (Views: 185.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-02-13 13:57:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.1.0) lib/rack/cors.rb:100:in `call'
+railties (5.2.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:41:31 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.9ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 166ms (Views: 128.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/api/notes" for ::1 at 2020-02-13 17:41:49 -0500
+Processing by Api::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/notes_controller.rb:4
+Completed 200 OK in 119ms (Views: 87.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:42:09 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.8ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:43:32 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.5ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:44:33 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.8ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 152ms (Views: 140.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:46:03 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.6ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 318ms (Views: 316.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:46:40 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 658ms (Views: 656.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:48:03 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (2.8ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 361ms (Views: 357.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:48:48 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (1.0ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 419ms (Views: 417.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/boxes" for ::1 at 2020-02-13 17:50:04 -0500
+Processing by Api::BoxesController#index as */*
+  [1m[36mBox Load (0.9ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  ↳ app/controllers/api/boxes_controller.rb:5
+Completed 200 OK in 286ms (Views: 284.7ms | ActiveRecord: 0.9ms)
+
+

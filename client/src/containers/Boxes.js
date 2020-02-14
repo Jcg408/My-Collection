@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { fetchBoxes } from '../actions/boxActions';
 import { removeBox } from '../actions/boxActions';
-import '../css/Home.css'
+import '../css/boxes.css'
 
 class Boxes extends Component {
     componentDidMount() {
@@ -15,10 +15,10 @@ class Boxes extends Component {
     
     render() {
         const boxItems = this.props.boxes.map(box =>
-            (<div key={box.id} className="jumbotron">
+            (<div key={box.id} className="container">
                 <img src={box.imgUrl} alt={box.name} />
-                <div className="desc">
-                    <h2>{box.name}</h2>
+                <div className="container">
+                    <h3>{box.name}</h3>
                     <p>{box.description} {box.size} - {box.year}</p>
                     <p>Artist: {box.artist}</p>  <p>Village: {box.location}</p>
                     <br />

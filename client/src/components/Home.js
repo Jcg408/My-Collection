@@ -10,8 +10,7 @@ const Home = () => {
 
             <span>
                 J. Gladstone
-                June 2019
-                Flatiron Final Project
+               
             </span>
         </div>
     )
